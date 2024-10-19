@@ -14,7 +14,7 @@ library(RColorBrewer)    # Color palettes
 library(readxl)          # For reading Excel files
 
 # Import the dataset from the Excel file
-data <- read_excel("Data/AMR_KAP_Data.xlsx")
+data <- read_excel("Raw Data/AMR_KAP_Data.xlsx")
 
 # ----- Visualize Knowledge Responses -----
 
@@ -44,9 +44,6 @@ ggsave("figures/Figure 1. Distribution of knowledge of antibiotic resistance amo
 
 
 # ----- Visualize Attitude Responses -----
-
-# Re-import the dataset (this step can be skipped if 'data' is already loaded)
-data <- read_excel("Data/AMR_KAP_Data.xlsx")
 
 # Select columns 24 to 33 that contain attitude-related questions
 # Convert character data into factors for Likert scale plotting
